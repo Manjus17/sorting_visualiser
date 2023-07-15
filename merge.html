@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Ysabeau:ital,wght@1,1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa fa-bars" id="btn"></i>
+        <i class="fas fa fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Sorting Visualiser</header>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/selection.html">Selection sort</a></li>
+            <li><a href="http://127.0.0.1:5500/insertion.html">Insertion sort</a></li>
+            <li><a href="http://127.0.0.1:5500/bubble.html">Bubble sort</a></li>
+            <li><a href="http://127.0.0.1:5500/quick.html">Quick sort</a></li>
+            <li><a href="http://127.0.0.1:5500/heap.html">Heap sort</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+
+    <div class="cl slay">
+        <div class="main">
+            <h1>Merge Sort</h1>
+            <p class="def">
+                Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm.
+                <br>
+                Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally, sub-problems are combined to form the final solution.
+            </p>
+            <h3>Divide and Conquer Strategy</h3>
+            <p class="def">
+                Using the Divide and Conquer technique, we divide a problem into subproblems. When the solution to each subproblem is ready, we 'combine' the results from the subproblems to solve the main problem.
+            </p>
+            <h3>Working of Merge Sort</h3>
+            <p class="def">
+                1. The MergeSort function repeatedly divides the array into two halves until we reach a stage where we try to perform MergeSort on a subarray of size 1 i.e. p == r.
+                <br><br>
+                2. After that, the merge function comes into play and combines the sorted arrays into larger arrays until the whole array is merged.
+                
+            </p>
+            <div class="work">
+                <div class="container">
+                </div>
+
+                <div>
+                    <div class="slide">
+                        <div id="element">
+                            Elements : 20
+                        </div>
+                        <input type="range" min="20" max="100" step="5" value="20" class="slider" id="range"
+                            oninput="slider()">
+
+                        <div id="speedslider">
+                            Speed : 2
+                        </div>
+                        <input type="range" min="1" max="5" step="1" value="2" class="slider" id="speed"
+                            oninput="changespeed()">
+                    </div>
+                    <button id="init">init</button>
+                    <button id="play">play</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="main.js"></script>
+    <script defer src="move.js"></script>
+    <script defer src="merge.js"></script>
+</body>
+
+</html>

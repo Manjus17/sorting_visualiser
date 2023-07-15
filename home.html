@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualiser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Ysabeau:ital,wght@1,1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div>
+        <section class="brown">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#B46060" fill-opacity="1"
+                    d="M0,160L18.5,160C36.9,160,74,160,111,170.7C147.7,181,185,203,222,208C258.5,213,295,203,332,197.3C369.2,192,406,192,443,213.3C480,235,517,277,554,293.3C590.8,309,628,299,665,277.3C701.5,256,738,224,775,197.3C812.3,171,849,149,886,138.7C923.1,128,960,128,997,154.7C1033.8,181,1071,235,1108,229.3C1144.6,224,1182,160,1218,149.3C1255.4,139,1292,181,1329,218.7C1366.2,256,1403,288,1422,304L1440,320L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z">
+                </path>
+            </svg>
+        </section>
+        <h1>SORTING VISUALISER</h1>
+        <p class="top">
+            Sorting refers to ordering data in an increasing or decreasing manner according to some linear relationship
+            among the data items.
+            <br>
+            In computer science, sorting is a common operation in
+            many applications, and efficient algorithms have been developed to perform it.
+            <br>
+            A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison
+            operator on the elements. The comparison operator is used to decide the new order of elements in the
+            respective data structure.
+            <br>
+        <p class="main">
+            This website helps you in visualizing some common sorting methods.
+        </p>
+        </p>
+    </div>
+
+
+    <section class="red">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,320L34.3,293.3C68.6,267,137,213,206,176C274.3,139,343,117,411,133.3C480,149,549,203,617,229.3C685.7,256,754,256,823,234.7C891.4,213,960,171,1029,144C1097.1,117,1166,107,1234,122.7C1302.9,139,1371,181,1406,202.7L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            </path>
+        </svg>
+        <h2><a href="http://127.0.0.1:5500/selection.html">Selection sort</a></h2>
+        <!-- anchor tag is given here only at one place  -->
+        <!-- check before creating different pages -->
+        <p>Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each
+            iteration and places that element at the beginning of the unsorted list.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,160L40,144C80,128,160,96,240,96C320,96,400,128,480,170.7C560,213,640,267,720,277.3C800,288,880,256,960,208C1040,160,1120,96,1200,101.3C1280,107,1360,181,1400,218.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <section>
+        <h2><a href="http://127.0.0.1:5500/insertion.html">Insertion sort</a></h2>
+        <p>Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each
+            iteration.
+            <br>
+            Insertion sort works similarly as we sort cards in our hand in a card game.
+            <br>
+            We assume that the first card is already sorted then, we select an unsorted card. If the unsorted card
+            is greater than the card in hand, it is placed on the right otherwise, to the left. In the same way,
+            other unsorted cards are taken and put in their right place.
+            <br>
+            A similar approach is used by insertion sort.
+        </p>
+    </section>
+    <section class="pink">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,288L26.7,272C53.3,256,107,224,160,218.7C213.3,213,267,235,320,208C373.3,181,427,107,480,80C533.3,53,587,75,640,112C693.3,149,747,203,800,202.7C853.3,203,907,149,960,112C1013.3,75,1067,53,1120,42.7C1173.3,32,1227,32,1280,58.7C1333.3,85,1387,139,1413,165.3L1440,192L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+            </path>
+        </svg>
+        <h2><a href="http://127.0.0.1:5500/bubble.html">Bubble sort</a></h2>
+        <p>Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in
+            the intended order.
+            <br>
+            Just like the movement of air bubbles in the water that rise up to the surface, each element of the
+            array move to the end in each iteration. Therefore, it is called a bubble sort.
+        </p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,224L21.8,208C43.6,192,87,160,131,138.7C174.5,117,218,107,262,101.3C305.5,96,349,96,393,117.3C436.4,139,480,181,524,213.3C567.3,245,611,267,655,256C698.2,245,742,203,785,176C829.1,149,873,139,916,165.3C960,192,1004,256,1047,261.3C1090.9,267,1135,213,1178,197.3C1221.8,181,1265,203,1309,186.7C1352.7,171,1396,117,1418,90.7L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <section>
+        <h2><a href="http://127.0.0.1:5500/merge.html">Merge sort</a></h2>
+        <p>Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and
+            Conquer Algorithm.
+            <br>
+            Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally,
+            sub-problems are combined to form the final solution.
+        </p>
+    </section>
+    <section class="purple">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,192L40,176C80,160,160,128,240,133.3C320,139,400,181,480,213.3C560,245,640,267,720,234.7C800,203,880,117,960,101.3C1040,85,1120,139,1200,133.3C1280,128,1360,64,1400,32L1440,0L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+            </path>
+        </svg>
+        <h2><a href="http://127.0.0.1:5500/quick.html">Quick sort</a></h2>
+        <p>Quicksort is a sorting algorithm based on the divide and conquer approach where
+            <br>
+            An array is divided into subarrays by selecting a pivot element (element selected from the array).
+            <br>
+            While dividing the array, the pivot element should be positioned in such a way that elements less than
+            pivot are kept on the left side and elements greater than pivot are on the right side of the pivot.
+            The left and right subarrays are also divided using the same approach. This process continues until each
+            subarray contains a single element.
+            <br>
+            At this point, elements are already sorted. Finally, elements are combined to form a sorted array.
+        </p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,64L26.7,96C53.3,128,107,192,160,192C213.3,192,267,128,320,101.3C373.3,75,427,85,480,122.7C533.3,160,587,224,640,234.7C693.3,245,747,203,800,160C853.3,117,907,75,960,53.3C1013.3,32,1067,32,1120,48C1173.3,64,1227,96,1280,133.3C1333.3,171,1387,213,1413,234.7L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <section>
+        <h2><a href="http://127.0.0.1:5500/heap.html">Heap sort</a></h2>
+        <p>Heap Sort is a popular and efficient sorting algorithm in computer programming. Learning how to write the
+            heap sort algorithm requires knowledge of two types of data structures - arrays and trees.
+            <br>
+            The initial set of numbers that we want to sort is stored in an array e.g. [10, 3, 76, 34, 23, 32] and
+            after sorting, we get a sorted array [3,10,23,32,34,76].
+            <br>
+            Heap sort works by visualizing the elements of the array as a special kind of complete binary tree
+            called a heap.
+        </p>
+    </section>
+    <section class="green">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,192L26.7,202.7C53.3,213,107,235,160,240C213.3,245,267,235,320,202.7C373.3,171,427,117,480,117.3C533.3,117,587,171,640,213.3C693.3,256,747,288,800,282.7C853.3,277,907,235,960,202.7C1013.3,171,1067,149,1120,138.7C1173.3,128,1227,128,1280,112C1333.3,96,1387,64,1413,48L1440,32L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+    
+    <!-- <section class="green">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,192L26.7,202.7C53.3,213,107,235,160,240C213.3,245,267,235,320,202.7C373.3,171,427,117,480,117.3C533.3,117,587,171,640,213.3C693.3,256,747,288,800,282.7C853.3,277,907,235,960,202.7C1013.3,171,1067,149,1120,138.7C1173.3,128,1227,128,1280,112C1333.3,96,1387,64,1413,48L1440,32L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+            </path>
+        </svg>
+        <h2>Count sort</h2>
+        <p>Counting sort is a sorting algorithm that sorts the elements of an array by counting the number of
+            occurrences of each unique element in the array. The count is stored in an auxiliary array and the
+            sorting is done by mapping the count as an index of the auxiliary array.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,192L21.8,165.3C43.6,139,87,85,131,58.7C174.5,32,218,32,262,74.7C305.5,117,349,203,393,250.7C436.4,299,480,309,524,272C567.3,235,611,149,655,138.7C698.2,128,742,192,785,186.7C829.1,181,873,107,916,74.7C960,43,1004,53,1047,69.3C1090.9,85,1135,107,1178,128C1221.8,149,1265,171,1309,160C1352.7,149,1396,107,1418,85.3L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <section>
+        <h2>Bucket sort</h2>
+        <p>Bucket Sort is a sorting algorithm that divides the unsorted array elements into several groups called
+            buckets. Each bucket is then sorted by using any of the suitable sorting algorithms or recursively
+            applying the same bucket algorithm.
+            <br>
+            Finally, the sorted buckets are combined to form a final sorted array.
+        </p>
+    </section>
+    <section class="brown">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#202731" fill-opacity="1"
+                d="M0,160L18.5,160C36.9,160,74,160,111,170.7C147.7,181,185,203,222,208C258.5,213,295,203,332,197.3C369.2,192,406,192,443,213.3C480,235,517,277,554,293.3C590.8,309,628,299,665,277.3C701.5,256,738,224,775,197.3C812.3,171,849,149,886,138.7C923.1,128,960,128,997,154.7C1033.8,181,1071,235,1108,229.3C1144.6,224,1182,160,1218,149.3C1255.4,139,1292,181,1329,218.7C1366.2,256,1403,288,1422,304L1440,320L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z">
+            </path>
+        </svg>
+        <h2>Radix sort</h2>
+        <p>Radix sort is a sorting algorithm that sorts the elements by first grouping the individual digits of the
+            same place value. Then, sort the elements according to their increasing/decreasing order.
+            <br>
+            Suppose, we have an array of 8 elements. First, we will sort elements based on the value of the unit
+            place. Then, we will sort elements based on the value of the tenth place. This process goes on until the
+            last significant place.
+
+        </p>
+    </section> -->
+    </div>
+
+</body>
+
+</html>

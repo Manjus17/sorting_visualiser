@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+}
+
+.def {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    font-family: 'Ysabeau', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div h1 {
+    font-size: 8rem;
+    text-align: center;
+}
+
+div h3 {
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Tilt Prism', cursive;
+}
+
+.container {
+    margin: 100px;
+    padding: 100px;
+    width: 1000px;
+    height: 800px;
+    border: 10px solid black;
+    border-radius: 25px;
+    align-items: flex-end;
+    justify-content: bottom;
+    background-color: white
+}
+
+.cl{
+    aspect-ratio: 900/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slay {
+    background-image: url('blob-scene-haikei\ \(4\).svg');
+}
+
+
+.work {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    width: 100px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+button :hover {
+    cursor: pointer;
+}
+
+*{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border-radius: 4px;
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 12px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+.slide{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#range{
+    margin-bottom: 40px;
+}
