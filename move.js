@@ -5,19 +5,6 @@ var in_speed = document.getElementById('speed');
 
 in_speed.addEventListener("input",change_speed);
 
-// var audioctx = null;
-
-// function playNote(freq){
-//     if(audioctx == null){
-//         audioctx = new(AudioContext || webkitAudioContext || window.webkitAudioContext)();
-//     }
-//     const dur = 0.1;
-//     const osc = audioctx.createOscillator();
-//     osc.frequency.value = freq;
-//     osc.stop(audioctx.currentTime + dur);
-//     osc.connect(audioctx.destination);
-// }
-
 function change_speed(){
     var array_speed = in_speed.value;
     speedslider.innerHTML = `Speed : ${array_speed}`;
@@ -51,8 +38,7 @@ function div_update(cont, height, color){
     },c_delay+=delay_time);
 }
 
-function enable_buttons()
-{
+function enable_buttons(){
     window.setTimeout(function(){
         in_si.disabled=false;
         init.disabled=false;

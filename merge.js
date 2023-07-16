@@ -34,17 +34,14 @@ function mergesort(start, mid, end){
         }
     }
 
-    for(var t=0;t<k;t++)
-    {
+    for(var t=0;t<k;t++){
         div_sizes[start++]=arr[t];
         div_update(divs[start-1],div_sizes[start-1],"#65C18C");//Color update
     }
 }
 
-function merge_partition(start,end)
-{
-    if(start < end)
-    {
+function merge_partition(start,end){
+    if(start < end){
         var mid=Math.floor((start + end) / 2);
         div_update(divs[mid],div_sizes[mid],"#F5A31A");//Color update
 
