@@ -2,6 +2,9 @@ var in_si = document.getElementById('range');
 var array_size = in_si.value;
 var init = document.getElementById('init');
 var element = document.getElementById('element');
+var code = document.getElementById('code');
+var complex = document.getElementById('complex');
+var play = document.getElementById('play');
 
 var div_sizes = [];
 var divs = [];
@@ -42,4 +45,7 @@ function disable_buttons()
     in_si.disabled=true;
     in_speed.disabled=true;
     init.disabled=true;
+    code.disabled=true;
+    complex.disabled=true;
+    play.disabled=true;
 }

@@ -43,6 +43,9 @@ function enable_buttons(){
         in_si.disabled=false;
         init.disabled=false;
         in_speed.disabled=false;
+        code.disabled=false;
+        complex.disabled=false;
+        play.disabled=false;
     },c_delay+=delay_time);
 }
 

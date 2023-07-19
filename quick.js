@@ -1,4 +1,3 @@
-var play = document.getElementById('play');
 play.addEventListener("click", quick);
 
 function quick(){
@@ -57,3 +56,59 @@ function quick_sort (start, end ){
         quick_sort (piv_pos +1, end) ;
     }
  }
+
+ function ccode(){
+    var cpp = document.getElementById("cpp");
+    var c = document.getElementById("c");
+    var py = document.getElementById("py");
+    var java = document.getElementById("java");
+    c.style = "padding: 10px; background: #3F2E3E; font-size: 30px";
+    py.style = "padding: 0px; background: black; font-size: 20px";
+    cpp.style = "padding: 0px; background: black; font-size: 20px";
+    java.style = "padding: 0px; background: black; font-size: 20px";
+
+    var text = document.querySelector(".code");
+    text.innerHTML = "void swap(int *a, int *b) {<br>&emsp;int t = *a;<br>&emsp;*a = *b;<br>&emsp;*b = t;<br>}<br><br><br>int partition(int array[], int low, int high) {<br><br>&emsp;  int pivot = array[high];<br>&emsp;int i = (low - 1);<br><br>&emsp;for (int j = low; j < high; j++) {<br>&emsp;&emsp;if (array[j] <= pivot) {<br>&emsp;&emsp;&emsp;i++;<br>&emsp;&emsp;&emsp;swap(&array[i], &array[j]);<br>&emsp;&emsp;}<br>&emsp;}<br><br>&emsp;swap(&array[i + 1], &array[high]);<br>&emsp;return (i + 1);<br>}<br><br><br>void quickSort(int array[], int low, int high) {<br>&emsp;if (low < high) {<br>&emsp;&emsp;int pi = partition(array, low, high);<br><br>&emsp;&emsp;quickSort(array, low, pi - 1);<br>&emsp;&emsp;quickSort(array, pi + 1, high);<br>&emsp;}<br>}";
+}
+
+function cppcode(){
+    var cpp = document.getElementById("cpp");
+    var c = document.getElementById("c");
+    var py = document.getElementById("py");
+    var java = document.getElementById("java");
+    cpp.style = "padding: 10px; background: #3F2E3E; font-size: 30px";
+    py.style = "padding: 0px; background: black; font-size: 20px";
+    c.style = "padding: 0px; background: black; font-size: 20px";
+    java.style = "padding: 0px; background: black; font-size: 20px";
+
+    var text = document.querySelector(".code");
+    text.innerHTML = "void swap(int *a, int *b) {<br>&emsp;int t = *a;<br>&emsp;*a = *b;<br>&emsp;*b = t;<br>}<br><br><br>int partition(int array[], int low, int high) {<br><br>&emsp;  int pivot = array[high];<br>&emsp;int i = (low - 1);<br><br>&emsp;for (int j = low; j < high; j++) {<br>&emsp;&emsp;if (array[j] <= pivot) {<br>&emsp;&emsp;&emsp;i++;<br>&emsp;&emsp;&emsp;swap(&array[i], &array[j]);<br>&emsp;&emsp;}<br>&emsp;}<br><br>&emsp;swap(&array[i + 1], &array[high]);<br>&emsp;return (i + 1);<br>}<br><br><br>void quickSort(int array[], int low, int high) {<br>&emsp;if (low < high) {<br>&emsp;&emsp;int pi = partition(array, low, high);<br><br>&emsp;&emsp;quickSort(array, low, pi - 1);<br>&emsp;&emsp;quickSort(array, pi + 1, high);<br>&emsp;}<br>}";
+}
+
+function pycode(){
+    var cpp = document.getElementById("cpp");
+    var c = document.getElementById("c");
+    var py = document.getElementById("py");
+    var java = document.getElementById("java");
+    py.style = "padding: 10px; background: #3F2E3E; font-size: 30px";
+    c.style = "padding: 0px; background: black; font-size: 20px";
+    cpp.style = "padding: 0px; background: black; font-size: 20px";
+    java.style = "padding: 0px; background: black; font-size: 20px";
+
+    var text = document.querySelector(".code");
+    text.innerHTML = "def partition(array, low, high):<br>&emsp;pivot = array[high]<br>&emsp;i = low - 1<br><br>&emsp;for j in range(low, high):<br>&emsp;&emsp;if array[j] <= pivot:<br>&emsp;&emsp;i = i + 1<br>&emsp;&emsp;(array[i], array[j]) = (array[j], array[i])<br><br>&emsp;(array[i + 1], array[high]) = (array[high], array[i + 1])<br>&emsp;return i + 1<br><br><br>def quickSort(array, low, high):<br>&emsp;if low < high:<br>&emsp;&emsp;pi = partition(array, low, high)<br>&emsp;&emsp;quickSort(array, low, pi - 1)<br>&emsp;&emsp;quickSort(array, pi + 1, high)";
+}
+
+function javacode(){
+    var cpp = document.getElementById("cpp");
+    var c = document.getElementById("c");
+    var py = document.getElementById("py");
+    var java = document.getElementById("java");
+    java.style = "padding: 10px; background: #3F2E3E; font-size: 30px";
+    py.style = "padding: 0px; background: black; font-size: 20px";
+    cpp.style = "padding: 0px; background: black; font-size: 20px";
+    c.style = "padding: 0px; background: black; font-size: 20px";
+
+    var text = document.querySelector(".code");
+    text.innerHTML = "static int partition(int array[], int low, int high) {<br>&emsp;int pivot = array[high];<br>&emsp;int i = (low - 1);<br><br>&emsp;for (int j = low; j < high; j++) {<br>&emsp;&emsp;if (array[j] <= pivot) {<br>&emsp;&emsp;&emsp;i++;<br><br>&emsp;&emsp;&emsp;int temp = array[i];<br>&emsp;&emsp;&emsp;array[i] = array[j];<br>&emsp;&emsp;&emsp;array[j] = temp;<br>&emsp;&emsp;}<br>&emsp;}<br><br>&emsp;int temp = array[i + 1];<br>&emsp;array[i + 1] = array[high];<br>&emsp;array[high] = temp;<br><br>&emsp;return (i + 1);<br>}<br><br><br>static void quickSort(int array[], int low, int high) {<br>&emsp;if (low < high) {<br>&emsp;&emsp;int pi = partition(array, low, high);<br>&emsp;&emsp;quickSort(array, low, pi - 1);<br>&emsp;&emsp;quickSort(array, pi + 1, high);<br>&emsp;}<br>}";
+}

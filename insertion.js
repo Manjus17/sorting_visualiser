@@ -1,4 +1,3 @@
-var play = document.getElementById('play');
 play.addEventListener("click", insertion);
 
 function insertion(){
@@ -42,3 +41,58 @@ function insertion(){
     enable_buttons();
 }
 
+function ccode(){
+    var cpp = document.getElementById("cpp");
+    var c = document.getElementById("c");
+    var py = document.getElementById("py");
+    var java = document.getElementById("java");
+    c.style = "padding: 10px; background: #3F2E3E; font-size: 30px";
+    py.style = "padding: 0px; background: black; font-size: 20px";
+    cpp.style = "padding: 0px; background: black; font-size: 20px";
+    java.style = "padding: 0px; background: black; font-size: 20px";
+
+    var text = document.querySelector(".code");
+    text.innerHTML = "void insertionSort(int array[], int size) {<br>&emsp;for (int step = 1; step < size; step++) {<br>&emsp;&emsp;int key = array[step];<br>&emsp;&emsp;int j = step - 1;<br>&emsp;&emsp;while (key < array[j] && j >= 0) {<br>&emsp;&emsp;&emsp;array[j + 1] = array[j];<br>&emsp;&emsp;&emsp;--j;<br>&emsp;&emsp;}<br>&emsp;array[j + 1] = key;<br>&emsp;}<br>}";
+}
+
+function cppcode(){
+    var cpp = document.getElementById("cpp");
+    var c = document.getElementById("c");
+    var py = document.getElementById("py");
+    var java = document.getElementById("java");
+    cpp.style = "padding: 10px; background: #3F2E3E; font-size: 30px";
+    py.style = "padding: 0px; background: black; font-size: 20px";
+    c.style = "padding: 0px; background: black; font-size: 20px";
+    java.style = "padding: 0px; background: black; font-size: 20px";
+
+    var text = document.querySelector(".code");
+    text.innerHTML = "void insertionSort(int array[], int size) {<br>&emsp;for (int step = 1; step < size; step++) {<br>&emsp;&emsp;int key = array[step];<br>&emsp;&emsp;int j = step - 1;<br>&emsp;&emsp;while (key < array[j] && j >= 0) {<br>&emsp;&emsp;&emsp;array[j + 1] = array[j];<br>&emsp;&emsp;&emsp;--j;<br>&emsp;&emsp;}<br>&emsp;array[j + 1] = key;<br>&emsp;}<br>}";
+}
+
+function pycode(){
+    var cpp = document.getElementById("cpp");
+    var c = document.getElementById("c");
+    var py = document.getElementById("py");
+    var java = document.getElementById("java");
+    py.style = "padding: 10px; background: #3F2E3E; font-size: 30px";
+    c.style = "padding: 0px; background: black; font-size: 20px";
+    cpp.style = "padding: 0px; background: black; font-size: 20px";
+    java.style = "padding: 0px; background: black; font-size: 20px";
+
+    var text = document.querySelector(".code");
+    text.innerHTML = "def insertionSort(array):<br>&emsp;for step in range(1, len(array)):<br>&emsp;&emsp;key = array[step]<br>&emsp;&emsp;j = step - 1<br>&emsp;&emsp;while j >= 0 and key < array[j]:<br>&emsp;&emsp;&emsp;array[j + 1] = array[j]<br>&emsp;&emsp;&emsp;j = j - 1<br>&emsp;&emsp;&emsp;array[j + 1] = key";
+}
+
+function javacode(){
+    var cpp = document.getElementById("cpp");
+    var c = document.getElementById("c");
+    var py = document.getElementById("py");
+    var java = document.getElementById("java");
+    java.style = "padding: 10px; background: #3F2E3E; font-size: 30px";
+    py.style = "padding: 0px; background: black; font-size: 20px";
+    cpp.style = "padding: 0px; background: black; font-size: 20px";
+    c.style = "padding: 0px; background: black; font-size: 20px";
+
+    var text = document.querySelector(".code");
+    text.innerHTML = "void insertionSort(int array[]) {<br>&emsp;int size = array.length;<br><br>&emsp;for (int step = 1; step < size; step++) {<br>&emsp;&emsp;int key = array[step];<br>&emsp;&emsp;int j = step - 1;<br>&emsp;&emsp;while (j >= 0 && key < array[j]) {<br>&emsp;&emsp;&emsp;array[j + 1] = array[j];<br>&emsp;&emsp;&emsp;--j;<br>&emsp;&emsp;}<br>&emsp;array[j + 1] = key;<br>&emsp;}<br>}";
+}

@@ -101,6 +101,57 @@
                     </div>
                     <button id="init">init</button>
                     <button id="play">play</button>
+                    <div class="popup" id="popup-1">
+                        <div class="overlay">
+                            <div class="content">
+                                <div class="close" onclick="togglepopup1()">&times;</div>
+                                <h2>
+                                    Time complexity
+                                </h2>
+                                <p class="hiii">
+                                    Worst case : O(nlogn)
+                                    <br>
+                                    Average case : O(nlogn)
+                                    <br>
+                                    Best case : O(n)
+                                </p>
+
+                                <br><br><br>
+                                <h2>
+                                    Space complexity
+                                </h2>
+                                <p class="hiii">
+                                    O(1)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="push" onclick="togglepopup1()">Complexity</button>
+
+                    <div class="popup" id="popup-2">
+                        <div class="overlay">
+                            <div class="content">
+                                <div>
+                                    <div class="close" onclick="togglepopup2()">&times;</div>
+
+                                    <div class="m">
+                                        <ul class="m">
+                                            <li class="i" id="c" onclick=ccode()>C</li>
+                                            <li class="i" id="cpp" onclick=cppcode()>C++</li>
+                                            <li class="i" id="py" onclick=pycode()>Python</li>
+                                            <li class="i" id="java" onclick=javacode()>java</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="code">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="push" onclick="togglepopup2()">Code</button>
                 </div>
             </div>
         </div>
@@ -108,6 +159,7 @@
     <script defer src="main.js"></script>
     <script defer src="move.js"></script>
     <script defer src="heap.js"></script>
+    <script defer src="pop.js"></script>
 </body>
 
 </html>
